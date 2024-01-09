@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ColorSliderView: View {
-    @State var value = 1.0
+    @Binding var value:Double
     
     var body: some View {
         HStack {
@@ -22,5 +22,5 @@ struct ColorSliderView: View {
 }
 
 #Preview {
-    ColorSliderView()
+    ColorSliderView(value: .constant(1.0))
 }
