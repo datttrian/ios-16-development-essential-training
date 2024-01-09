@@ -18,7 +18,7 @@ struct ContentView: View {
                 .padding()
             Image(systemName: "gamecontroller.fill")
                 .foregroundColor(Color(red: red, green: 0, blue: 0))
-            ColorSliderView(value: $red)
+            ColorSliderView(value: $red, color: .green)
         }
         .padding()
     }
