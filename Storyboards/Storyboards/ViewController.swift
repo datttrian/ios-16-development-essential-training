@@ -10,15 +10,23 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        label.text="Hello World"
+        textField.becomeFirstResponder()
+        label.text = ""
+        
     }
     
     @IBAction func buttonWasPressed(_ sender: Any) {
-        label.text="Button was pressed"
+        let name = textField.text ?? ""
+        label.text="Hello \(name)!"
+        textField.resignFirstResponder()
     }
-    
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textField.resignFirstResponder()
+    }
 }
