@@ -27,6 +27,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="My Button"/>
+                                <connections>
+                                    <action selector="buttonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTY-H7-mws"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7W-RU-bH5">
                                 <rect key="frame" x="57" y="180" width="83" height="21"/>

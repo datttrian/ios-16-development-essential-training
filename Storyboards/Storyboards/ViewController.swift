@@ -16,5 +16,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         label.text="Hello World"
     }
+    
+    @IBAction func buttonWasPressed(_ sender: Any) {
+        label.text="Button was pressed"
+    }
+    
 }
-
