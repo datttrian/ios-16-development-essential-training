@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var name = ""
+    @State var red = 1.0
     
     var body: some View {
         VStack {
-            TextField("Name", text: $name)
-            Text("Hello, \(name)!")
-        }
+            Text("Color Picker")
+                .font(.largeTitle)
+                .fontWeight(.light)
                 .padding()
+            Image(systemName: "gamecontroller.fill")
+                .foregroundColor(Color(red: red, green: 0, blue: 0))
+            Slider(value: $red)
+        }
+        .padding()
     }
 }
 
