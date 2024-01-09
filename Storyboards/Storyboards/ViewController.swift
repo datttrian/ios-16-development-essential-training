@@ -22,6 +22,10 @@ class ViewController: UIViewController {
     @IBAction func buttonWasPressed(_ sender: Any) {
         let name = textField.text ?? ""
         label.text="Hello \(name)!"
+        textField.resignFirstResponder()
     }
-    
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textField.resignFirstResponder()
+    }
 }
