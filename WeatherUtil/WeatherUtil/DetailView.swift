@@ -9,11 +9,20 @@ import SwiftUI
 
 struct DetailView: View {
     var data: WeatherData
+    @State var isPresenting = false
     
     var body: some View {
         VStack {
             Text(data.day)
-            Text("H \(data.high)° L \(data.low)° F")
+            Button("More Info") {
+                isPresenting = true
+            }
+            .padding()
+            .sheet(isPresented: $isPresenting, content: {
+                Text("H \(data.high)° L \(data.low)° F")
+                Image(systemName: data.icon)
+            })
+            
         }
     }
 }
