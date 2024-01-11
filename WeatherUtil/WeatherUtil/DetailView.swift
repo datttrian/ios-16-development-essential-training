@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct DetailView: View {
+    var data: WeatherData
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(data.day)
+            Text("H \(data.high)° L \(data.low)° F")
+        }
     }
 }
 
 #Preview {
-    DetailView()
+    DetailView(data: DataModel.data[0])
 }

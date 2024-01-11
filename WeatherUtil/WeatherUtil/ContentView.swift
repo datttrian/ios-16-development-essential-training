@@ -14,7 +14,7 @@ struct ContentView: View {
                 HStack {
                     Image(systemName: object.icon)
                     Text("\(object.high)° F")
-                    NavigationLink(object.day, destination: DetailView())
+                    NavigationLink(object.day, destination: DetailView(data: object))
                 }
                 .navigationTitle("New York City")
             }
