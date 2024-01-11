@@ -21,6 +21,7 @@ struct DetailView: View {
             .sheet(isPresented: $isPresenting, content: {
                 Text("H \(data.high)° L \(data.low)° F")
                 Image(systemName: data.icon)
+                    .foregroundColor(data.color)
             })
             
         }

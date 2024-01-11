@@ -13,6 +13,7 @@ struct ContentView: View {
             List(DataModel.data, id: \.id) { object in
                 HStack {
                     Image(systemName: object.icon)
+                        .foregroundColor(object.color)
                     Text("\(object.high)° F")
                     NavigationLink(object.day, destination: DetailView(data: object))
                 }
