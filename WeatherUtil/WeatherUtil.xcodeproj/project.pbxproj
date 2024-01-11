@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA6511CA2B4F98F4008372CC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6511C92B4F98F4008372CC /* DetailView.swift */; };
 		DABCDA842B4F7C12001C6287 /* WeatherUtilApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABCDA832B4F7C12001C6287 /* WeatherUtilApp.swift */; };
 		DABCDA862B4F7C12001C6287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABCDA852B4F7C12001C6287 /* ContentView.swift */; };
 		DABCDA882B4F7C13001C6287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABCDA872B4F7C13001C6287 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA6511C92B4F98F4008372CC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DABCDA802B4F7C12001C6287 /* WeatherUtil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherUtil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABCDA832B4F7C12001C6287 /* WeatherUtilApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUtilApp.swift; sourceTree = "<group>"; };
 		DABCDA852B4F7C12001C6287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				DABCDA832B4F7C12001C6287 /* WeatherUtilApp.swift */,
 				DABCDA852B4F7C12001C6287 /* ContentView.swift */,
+				DA6511C92B4F98F4008372CC /* DetailView.swift */,
 				DABCDA912B4F7C4B001C6287 /* DataModel.swift */,
 				DABCDA872B4F7C13001C6287 /* Assets.xcassets */,
 				DABCDA892B4F7C13001C6287 /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DABCDA862B4F7C12001C6287 /* ContentView.swift in Sources */,
+				DA6511CA2B4F98F4008372CC /* DetailView.swift in Sources */,
 				DABCDA842B4F7C12001C6287 /* WeatherUtilApp.swift in Sources */,
 				DABCDA922B4F7C4B001C6287 /* DataModel.swift in Sources */,
 			);
